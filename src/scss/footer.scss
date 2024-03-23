@@ -1,0 +1,41 @@
+footer {
+  padding-top: 17px;
+  background: rgb(248, 248, 248);
+  color: rgb(126, 126, 130);
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+
+
+}
+
+.footer_nopublick {
+  max-width: 250px;
+  margin-bottom: 19px;
+}
+.footer_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 767px) and (max-width: 6000px) {
+  .footer_wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer_company {
+    text-align: left;
+    margin-left: 24px;
+
+  }
+ .footer_nopublick {
+    text-align: right;
+   margin-right: 24px;
+ }
+}

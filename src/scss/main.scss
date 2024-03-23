@@ -1,0 +1,39 @@
+@import "mixins";
+@import "fonts";
+@import "vendor";
+@import "vars";
+@import "settings";
+@import "leftmenu";
+@import "block_320";
+@import "menu_functional";
+@import "media";
+@import "swiper";
+@import "swiper_tehnika.scss";
+@import "swiper_cena";
+@import "footer";
+@import "table_cena";
+@import "obratnaya_svyaz";
+@import "ostavit_zajavku";
+body {
+  height: 100%;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  min-width: 320px;
+}
+
+.header {
+  text-align: center;
+  & img {
+    width: 30%;
+  }
+}
+
+.welcome-title {
+  margin-top: 50px;
+  font-size: 6em;
+}

@@ -1,0 +1,379 @@
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-block;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.30;
+}
+button:active, button:focus {
+  outline: none;
+}
+.block {
+  background-color: #F8F8F8;
+}
+
+.block_header_320 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-bottom: 16px;
+  background-color: white;
+  border-bottom: 1px solid #B8FFEC;
+  min-width: 315px;
+
+  & .header_320_wrapper1 {
+    display: flex;
+    align-items: center;
+  }
+
+  & .header_320_wrapper2 {
+    display: flex;
+    align-items: center;
+  }
+
+
+  & .burger {
+  position: relative;
+  margin-right: 1em;
+  margin-left: 16px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: url("../img/burger.png") center left no-repeat;
+  }
+  & .logo {
+    width: 96px;
+    height: 50px;
+  }
+  & .divider {
+margin-left: 16px;
+  }
+  & .phone {
+    display: none;
+    margin-right: 1em;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: url("../img/call.png") center left no-repeat;
+  }
+  & .chat {
+    display:none;
+    margin-right: 1em;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: url("../img/chat.png") center left no-repeat;
+  }
+  & .contact {
+    display: none;
+    margin-right: 1.25em;
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: url("../img/profile.png") center left no-repeat;
+  }
+  & .zajavka:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 32px;
+    border: 1px solid #EAEAEA;
+    border-radius: 3px;
+    top:5px;
+    left:-13px;
+    margin: 0 auto 0 auto;
+  }
+
+  & .zajavka {
+    position: relative;
+    margin-right: 16px;
+    margin-left: auto;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: url("../img/tools.png") center left no-repeat;
+  }
+  & .status {
+    margin-right: 16px;
+    margin-left: auto;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: url("../img/check.png") center left no-repeat;
+  }
+}
+.zajavka_button_text, .status_button_text  {
+  display: none;
+  margin-right: 8px;
+  color: rgb(27, 28, 33);
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: right;
+}
+
+
+/*SCROLL MENU*/
+.scroll_menu::-webkit-scrollbar {
+  display: none;
+}
+.scroll_name {
+  margin: 24px 0 0 16px;
+  font-family: "TT Lakes";
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+
+.scroll_name_highlight {
+  position:absolute;
+  top: 105px;
+  border: 3px solid #41f6d7;
+  height:40px;
+  background-color: #41f6d7;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.scroll_menu {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto   ;
+  white-space: nowrap;
+  padding-left: 1em;
+  margin-top: 16px;
+
+
+
+  & .scroll_item {
+  display: flex;
+  text-decoration: none;
+  font-family: "TT Lakes Regular";
+  font-size: 16px;
+  line-height: 24px;
+
+  }
+
+  & .scroll_items {
+  text-decoration: none;
+  color: #7E7E82;
+  margin-left: 0;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 0.5em 0.563em 0.5em 1em;
+  }
+  & .scroll_items:hover {
+  border: 2px solid #B8FFEC;
+  background: #FFFFFF;
+}
+}
+
+//Info Company
+
+
+.read_more__wrapper {
+  display: flex;
+  align-items: center;
+  width: 132px;
+  height: 24px;
+  margin:16px auto 16px 16px;
+}
+.read-next_ico, .read-next_ico_brands, .read-next_ico_tehnika {
+  width: 7px;
+  height: 10px;
+  margin-right: 8px;
+
+}
+.read-next_ico__active{
+  transform: rotate(180deg);
+}
+
+.read_more_company, .see_all_brends, .see_all_tehnika {
+  font-family: "TT Lakes Regular";
+  font-weight: bold;
+  //width: 120px;
+  height: 24px;
+}
+.info_text{
+  font-family: "TT Lakes Regular";
+  margin-left: 1em;
+  margin-right: 1em;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  font-size: 14px;
+  height: 90px;
+  overflow: hidden;
+}
+.info_text_active {
+  height: auto;
+}
+
+.nds {
+  max-width: 421px;
+  max-height: 137px;
+  margin: 16px auto 16px 16px;
+  color: rgb(27, 28, 33);
+  font-family: TT Lakes;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+.komerch_predl {
+  display: flex;
+  color: rgb(27, 28, 33);
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  margin-left: 16px;
+  border-bottom: 1px solid #B8FFEC;
+  padding-bottom: 40px;
+
+
+  & p {
+    display: block;
+    align-self: center;
+  }
+  & .more {
+    display: inline-flex;
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
+}
+.header_320_wrapper1_divider {
+  margin-right: 10px;
+  display: none;
+}
+.remont_brendov_all {
+  display: none;
+  height: 175px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+.read_more__wrapper_brands, .read_more__wrapper_tehnika {
+  display: flex;
+  align-items: center;
+  width: 132px;
+  height: 24px;
+  margin:16px auto 16px 16px;
+}
+.see_brends_active {
+  height: auto;
+}
+
+
+
+@media (min-width: 520px) and (max-width: 1439.98px) {
+  .header_320_wrapper2 {
+    & .phone{
+      display: block;
+    }
+    & .chat{
+      display: block;
+    }
+    & .contact{
+      display: block;
+    }
+    & .phone{
+      display: block;
+    }
+  }
+  .header_320_wrapper1 {
+    & .header_320_wrapper1_divider {
+      display: block;
+    }
+
+  }
+
+}
+
+
+@media (min-width: 767px) and (max-width: 6000px)
+{
+  .info_company {
+    display: flex;
+  }
+  .info_company_wrapper {
+    flex-grow: 1;
+  }
+  .info_company_logo {
+    min-width: 360px;
+    flex-grow: 1;
+  }
+  .info_text {
+    height: 160px;
+  }
+  .info_text_active {
+    height: auto;
+  }
+ .swiper_remont_brendov {
+   display: none;
+ }
+  .remont_brendov_all {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 24px;
+    & .swiper-slide:first-child{
+      margin:0 24px 0 0;
+    }
+    & .swiper-slide:last-child {
+      width: 210px;
+    }
+    & .swiper-slide {
+      margin-right: 24px;
+      margin-bottom: 16px;
+      width: 210px;
+    }
+  }
+
+
+}
+@media (min-width: 832px) and (max-width: 6000px){
+.read_more__wrapper {
+  display: none;
+}
+}
+
+@media (min-width: 976px) and (max-width: 6000px) {
+  .read_more__wrapper_brands {
+    display: none;
+  }
+
+}
+@media (min-width:0px) and (max-width:766px) {
+  .read_more__wrapper_brands{
+    display: none;
+  }
+  .read_more__wrapper_tehnika {
+    display: none;
+  }
+}
+@media (min-width:1439.98px) and (max-width:6000px) {
+  .block_header_320 .zajavka:before {
+    display: none;
+  }
+  .zajavka_button_text, .status_button_text {
+    display: block;
+  }
+}
+
